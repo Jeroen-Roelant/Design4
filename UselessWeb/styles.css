@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.chatApp{
+    background-image: url('https://pbs.twimg.com/media/EUN7wj_WoAAYpXI.jpg');
+}
+
+/* chats */
+
+.chatlog{
+    height: 400px;
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    overflow-y: auto;
+}
+
+.message{
+    background-color: white;
+    max-width: 80%;
+    height:auto;
+    border-radius: 10px 10px 0px 10px;
+    margin: 10px 10px 0px 0px;
+    padding: 0px 6px 0px 6px;
+}
+
+.content{
+    margin-bottom: 0px;
+    margin-top: 8px;
+    word-wrap: break-word;
+}
+
+.meta{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.7em;
+    text-align: right;
+    font-weight: bold;
+    color: rgb(124, 124, 124);
+    margin-bottom: 8px;
+}
+
+.time{
+    margin: 8px 0px 0px 0px;
+}
+
+.check{
+    margin-left: 5px;
+    animation: changeColor 0.2s linear forwards;
+    animation-delay: 2s;
+}
+
+@keyframes changeColor {
+    0% {
+        color: rgb(124, 124, 124);
+    }
+    100% {    
+        color: rgb(62, 213, 240);
+    }
+}
+
+/* input */
+
+.message_input{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 6px 6px 6px;
+}
+
+input{
+    height: 80%;
+    width: 80%;
+    border: none;
+    border-radius: 10px 10px 0px 10px;
+    background-color: #ffffffcc;
+    padding-left: 8px;
+    margin-right: 10px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgb(42, 163, 184);
+}
+
+.sendImg{
+    height: 16px;
+    width: 16px;
+    filter: invert(1);
+}
