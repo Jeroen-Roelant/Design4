@@ -5,35 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <script src="./script.js" defer></script>
-        <title>Document</title>
+        <link rel="icon" type="image/x-icon" href="./assets/seenchecks.jpg">
+        <title>Left on read simulator</title>
     </head>
     <body>
-        <div class="chatApp">
-            <div class="user">
-                <img class="pfp" src="https://thispersondoesnotexist.com/" alt="profile picture">
-                <div class="userdata">
-                    <p class="name">My friend</p>
-                    <p class="status">Online</p>
+        <main>
+            <h1>Left on read simulator</h1>
+
+            <div class="chatApp">
+                <div class="user">
+                    <img class="pfp" src="https://thispersondoesnotexist.com/" alt="profile picture">
+                    <div class="userdata">
+                        <p class="name">My friend</p>
+                        <p class="status">Online</p>
+                    </div>
+                </div>
+                <div class="chatlog" id="chatlog">       
+    <!--             
+                    <div class="message">
+                        <p class="content">test message!</p>
+                        <div class="meta">
+                            <p class="time">12:00</p>
+                            <div class="check">&check;</div>
+                        </div>
+                    </div> 
+    -->
+                    <!-- sent messages appear here -->
+                </div>
+                <div class="message_input">
+                    <input autocomplete="off" id="textContent" type="text" placeholder="Typ hier uw bericht">
+                    <button onclick="sendMessage()">
+                        <img class="sendImg" src="./assets/send.png" alt="send">
+                    </button>
                 </div>
             </div>
-            <div class="chatlog" id="chatlog">       
-<!--             
-                <div class="message">
-                    <p class="content">test message!</p>
-                    <div class="meta">
-                        <p class="time">12:00</p>
-                        <div class="check">&check;</div>
-                    </div>
-                </div> 
--->
-                <!-- sent messages appear here -->
-            </div>
-            <div class="message_input">
-                <input autocomplete="off" id="textContent" type="text" placeholder="Typ hier uw bericht">
-                <button onclick="sendMessage()">
-                    <img class="sendImg" src="./send.png" alt="send">
-                </button>
-            </div>
-        </div>
+        </main>
+        <footer>
+            <p>Gemaakt door Jeroen Roelant.</p>
+            <p>De afbeeldingen die worden gebruikt als profielfoto zijn geen echte mensen en komen van <a href="https://thispersondoesnotexist.com/">thispersondoesnotexist.com</a></p>
+        </footer>
     </body>
 </html>

@@ -3,6 +3,8 @@ function sendMessage(){
 
     if (content != '') {
 
+        // Building the html msg
+
         // <div class="message">
         //     <p class="content">test message!</p>
         //     <div class="meta">
@@ -37,9 +39,19 @@ function sendMessage(){
 
         msg.appendChild(meta);
 
+        // Appending the html msg
+
         let element = document.getElementById("chatlog");
         element.appendChild(msg);
+
+        // Clearing the input field
 
         document.getElementById("textContent").value = '';
     }
 }
+
+document.getElementById('textContent').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+});

@@ -1,10 +1,10 @@
-body {
+main {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
@@ -12,7 +12,10 @@ body {
 
 .chatApp{
     background-image: url('https://pbs.twimg.com/media/EUN7wj_WoAAYpXI.jpg');
+    background-size: contain;
 }
+
+/* Top bar */
 
 .user{
     background-color: rgba(42, 170, 192, 0.705);
@@ -46,18 +49,16 @@ body {
     margin: 0px 0px 0px 0px;
 }
 
-/* chats */
+/* Chats */
 
 .chatlog{
     height: 360px;
+    width: 241px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: flex-end;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    /* flex-grow: 1;
-    flex-basis:0; */
+    padding: 16px 0px 16px 0px;
     overflow-y: scroll;
 }
 
@@ -88,10 +89,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* .time{
-    margin: 8px 0px 0px 0px;
-} */
-
 .check{
     margin-left: 5px;
     animation: changeColor 0.2s linear forwards;
@@ -107,7 +104,7 @@ body {
     }
 }
 
-/* input */
+/* Input */
 
 .message_input{
     height: 40px;
@@ -146,4 +143,19 @@ button:hover{
     height: 16px;
     width: 16px;
     filter: invert(1);
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p {
+    width: 350px;
+    font-size: 0.8em;
+    text-align: center;
 }
