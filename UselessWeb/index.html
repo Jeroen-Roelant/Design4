@@ -9,25 +9,29 @@
     </head>
     <body>
         <div class="chatApp">
-            <div class="chatlog" id="chatlog">
-
-                <!-- sample message -->
+            <div class="user">
+                <img class="pfp" src="https://thispersondoesnotexist.com/" alt="profile picture">
+                <div class="userdata">
+                    <p class="name">My friend</p>
+                    <p class="status">Online</p>
+                </div>
+            </div>
+            <div class="chatlog" id="chatlog">       
+<!--             
                 <div class="message">
                     <p class="content">test message!</p>
                     <div class="meta">
                         <p class="time">12:00</p>
                         <div class="check">&check;</div>
                     </div>
-                </div>
-
+                </div> 
+-->
                 <!-- sent messages appear here -->
-
             </div>
-
             <div class="message_input">
-                <input id="textContent" type="text" placeholder="Typ hier uw bericht">
+                <input autocomplete="off" id="textContent" type="text" placeholder="Typ hier uw bericht">
                 <button onclick="sendMessage()">
-                    <img class="sendImg" src="./send.png" alt="">
+                    <img class="sendImg" src="./send.png" alt="send">
                 </button>
             </div>
         </div>

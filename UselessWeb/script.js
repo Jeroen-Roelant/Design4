@@ -1,8 +1,17 @@
 function sendMessage(){
-    const content = document.getElementById("textContent").value;
+    let content = document.getElementById("textContent").value;
 
     if (content != '') {
-        const msg = document.createElement("div");
+
+        // <div class="message">
+        //     <p class="content">test message!</p>
+        //     <div class="meta">
+        //         <p class="time">12:00</p>
+        //         <div class="check">&check;</div>
+        //     </div>
+        // </div>
+
+        let msg = document.createElement("div");
         msg.className = "message";
 
         let para = document.createElement("p");
@@ -28,7 +37,9 @@ function sendMessage(){
 
         msg.appendChild(meta);
 
-        const element = document.getElementById("chatlog");
+        let element = document.getElementById("chatlog");
         element.appendChild(msg);
+
+        document.getElementById("textContent").value = '';
     }
 }

@@ -14,23 +14,56 @@ body {
     background-image: url('https://pbs.twimg.com/media/EUN7wj_WoAAYpXI.jpg');
 }
 
+.user{
+    background-color: rgba(42, 170, 192, 0.705);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 0px 4px 4px;
+}
+
+.pfp{
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.userdata{
+    margin-left: 8px;
+}
+
+.name{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 0px 0px 0px 0px;
+}
+
+.status{
+    color: #ffffff;
+    font-size: 0.8em;
+    margin: 0px 0px 0px 0px;
+}
+
 /* chats */
 
 .chatlog{
-    height: 400px;
-    width: 225px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
     padding-top: 16px;
     padding-bottom: 16px;
-    overflow-y: auto;
+    /* flex-grow: 1;
+    flex-basis:0; */
+    overflow-y: scroll;
 }
 
 .message{
     background-color: white;
-    max-width: 80%;
+    max-width: 190px;
     height:auto;
     border-radius: 10px 10px 0px 10px;
     margin: 10px 10px 0px 0px;
@@ -47,6 +80,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    height: 20px;
     font-size: 0.7em;
     text-align: right;
     font-weight: bold;
@@ -54,9 +88,9 @@ body {
     margin-bottom: 8px;
 }
 
-.time{
+/* .time{
     margin: 8px 0px 0px 0px;
-}
+} */
 
 .check{
     margin-left: 5px;
@@ -88,7 +122,7 @@ input{
     width: 80%;
     border: none;
     border-radius: 10px 10px 0px 10px;
-    background-color: #ffffffcc;
+    background-color: #ffffffb2;
     padding-left: 8px;
     margin-right: 10px;
 }
@@ -102,6 +136,10 @@ button{
     border-radius: 100%;
     border: none;
     background-color: rgb(42, 163, 184);
+}
+
+button:hover{
+    background-color: rgb(52, 194, 219);
 }
 
 .sendImg{
