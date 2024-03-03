@@ -1,59 +1,98 @@
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: 'Yatra One', sans-serif;
-    overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: 'Irish Grover', sans-serif;
+  overflow: hidden;
 }
 
 div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
 }
 
 h1{
-    font-size: 15em;
+  font-size: 15em;
 
 }
 
 .sax{
-    height: 15em;
+  height: 15em;
 }
 
 .ani{
-    animation: customAni 2s ease-in-out 0s infinite normal none;
+  animation: customAni 2s ease-in-out 0s infinite normal none;
 }
 
 @keyframes customAni {
-    0%,
-    100% {
-      transform: translateY(0) rotate(0);
-      transform-origin: 50% 50%;
-    }
-  
-    15% {
-      transform: translateY(-30px) rotate(5deg);
-    }
-  
-    30% {
-      transform: translateY(15px) rotate(-5deg);
-    }
-  
-    45% {
-      transform: translateY(-15px) rotate(3.5deg);
-    }
-  
-    60% {
-      transform: translateY(10px) rotate(-2.5deg);
-    }
-  
-    75% {
-      transform: translateY(-5px) rotate(1deg);
-    }
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
   }
+
+  15% {
+    transform: translateY(-30px) rotate(5deg);
+  }
+
+  30% {
+    transform: translateY(15px) rotate(-5deg);
+  }
+
+  45% {
+    transform: translateY(-15px) rotate(3.5deg);
+  }
+
+  60% {
+    transform: translateY(10px) rotate(-2.5deg);
+  }
+
+  75% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+}
+
+h1{
+  animation-name: wavy;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#A{
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+#Z1{
+  animation-delay: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+#Z2{
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -15px;
+  }
+  40% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
+  }
+}
