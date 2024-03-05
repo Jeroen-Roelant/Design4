@@ -14,7 +14,6 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
 }
 
 h1{
@@ -140,6 +139,7 @@ h1{
   animation-duration: 1s;
   animation-name: moveAside;
   animation-fill-mode: forwards;
+  width: 100%;
 }
 
 @keyframes moveAside {
