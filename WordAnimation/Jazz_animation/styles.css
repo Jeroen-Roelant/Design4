@@ -1,3 +1,8 @@
+:root{
+  --bg-color: #f0f0f0;
+  --secondary-color: #000;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -5,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: var(--bg-color);
   font-family: 'Irish Grover', sans-serif;
   overflow: hidden;
 }
@@ -24,7 +29,7 @@ h1{
 
 .sax{
   height: 15em;
-  color: black;
+  color: var(--secondary-color);
 }
 
 .ani{
@@ -71,6 +76,9 @@ h1{
 #A{
   animation-delay: 2s;
   animation-iteration-count: infinite;
+
+  -webkit-text-stroke: 2px var(--secondary-color);
+  color:var(--bg-color);
 }
 
 #Z1{
@@ -81,6 +89,9 @@ h1{
 #Z2{
   animation-delay: 3s;
   animation-iteration-count: infinite;
+
+  -webkit-text-stroke: 2px var(--secondary-color);
+  color:var(--bg-color);
 }
 
 @keyframes wavy {
