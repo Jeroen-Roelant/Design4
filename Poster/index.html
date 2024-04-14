@@ -22,6 +22,8 @@
       overflow-y: hidden;
     }
 
+    /* Text */
+
     h2{
       font-family: "DM Serif Display", serif;
       font-weight: 100;
@@ -44,6 +46,8 @@
       font-size: 1em;
     }
 
+    /* Movie information */
+
     .info{
       z-index: 1;
       display: flex;
@@ -63,6 +67,8 @@
       text-align: right;
       display: flex;
     }
+
+    /* Spaceship and quote */
 
     .endurance{
       position: absolute;
@@ -88,7 +94,10 @@
       }
     }
 
-    .gargantua_inst, .gargantua_bg{
+    /* Black hole */
+    
+    .gargantua_inst, 
+    .gargantua_bg{
       z-index: 1;
       position: absolute;
       top: -5vh;
@@ -96,7 +105,8 @@
       transform: rotateZ(-15deg);
     }
 
-    .gargantua_inst svg , .gargantua_bg svg{
+    .gargantua_inst svg , 
+    .gargantua_bg svg{
       width: 100vw;
       height: auto;
     }
@@ -119,6 +129,19 @@
         opacity: 0.8;
       }
     }
+
+    .gargantua_circle svg{
+      width: 45vw;
+      height: auto;
+      fill: var(--bg-black);
+    }
+
+    .gargantua_circle{
+      position: absolute;
+      left: 5vw;
+    }
+
+    /* Black hole sprite animation */
 
     #fr1{
       animation: k1 2s infinite;
@@ -254,6 +277,8 @@
       }
     }
 
+    /* Stars */
+
     .stars circle{
       fill: #fff;
     }
@@ -265,17 +290,6 @@
       width: 100vw;
       height: 100vh;
       z-index: -1;
-    }
-
-    .gargantua_circle svg{
-      width: 45vw;
-      height: auto;
-      fill: var(--bg-black);
-    }
-
-    .gargantua_circle{
-      position: absolute;
-      left: 5vw;
     }
 
   </style>
