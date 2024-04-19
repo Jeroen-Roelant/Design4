@@ -1,0 +1,256 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* Fonts */
+@font-face {
+	font-family: trinigan;
+	src: url('trinigan.ttf');
+}
+
+@font-face {
+	font-family: annStone;
+	src: url('AnnStone.ttf');
+}
+
+@font-face {
+	font-family: artNouveauCaps;
+	src: url('ArtNouveauCaps.ttf');
+}
+
+@font-face {
+	font-family: floralCaps;
+	src: url('FloralCapsNouveau.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap'); 
+
+/* Variables */
+:root{
+	--pas-blanc: #F1EED8;
+	--jaune: #E8AC26;
+	--orange: #E58C2A;
+	--bordeaux: #81211B;
+	--vert-1: #737F4C;
+	--vert-2: #03593A;
+}
+
+/* General */
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.page-wrapper {
+	background-color: var(--pas-blanc);
+	overflow-x: scroll;
+	overflow-y: none;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Sidebar */
+
+aside.sidebar{
+	order: 0;
+	min-width: 20vw;
+	height: 100vh;
+	overflow-y: scroll;
+
+	opacity: 0.5;
+	-webkit-transition: all .4s ease;
+}
+
+aside.sidebar:hover{
+	opacity: 1;
+	-webkit-transition: all .4s ease;
+}
+
+aside.sidebar .wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+aside.sidebar .wrapper * h3{
+	font-family: "Trinigan", sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	color: var(--bordeaux);
+	text-align: center;
+	
+}
+
+aside.sidebar .wrapper .design-selection nav ul{
+	padding: 0 0 0 0;
+}
+
+aside.sidebar .wrapper .design-selection nav ul li{
+	list-style-type: none;
+	height: 150px;
+	width: 10vw;
+	background-image: url("Frame_1.svg");
+	background-repeat: no-repeat;
+	background-size: fill;
+	background-position: center;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	font-family: "Inder", sans-serif;
+	
+	-webkit-transition: all .4s ease;
+}
+
+aside.sidebar .wrapper * li:hover{
+	scale: 1.2;
+	-webkit-transition: all .4s ease;
+}
+
+aside.sidebar .wrapper .design-selection nav ul li a:nth-child(1){
+	font-family: "floralCaps", sans-serif;
+	font-size: 1.5em;
+	color: var(--bordeaux);
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	margin-bottom: -50px;
+	
+	-webkit-transition: all .4s ease;
+}
+
+aside.sidebar .wrapper .design-selection nav ul li a:nth-child(2){
+	font-family: "trinigan", sans-serif;
+	font-size: 1em;
+	color: var(--bordeaux);
+	text-decoration: none;
+	text-align: center;
+
+	-webkit-transition: all .4s ease;
+}
+
+aside.sidebar .wrapper .design-selection nav ul li a:hover{
+	color: var(--vert-2);
+
+	-webkit-transition: all .4s ease;
+}
+
+aside.sidebar .wrapper .design-archives nav ul{
+	padding: 0 0 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+aside.sidebar .wrapper .design-archives nav ul li{
+	padding: 0 0 0 0;
+	list-style: none;
+	background-color: var(--vert-2);
+	width: 12vw;
+	font-family: "floralCapsNouveau", sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	color: var(--pas-blanc);
+	padding: 2vh 0 2vh 0 ;
+	-webkit-transition: all .4s ease;
+}
+
+aside.sidebar .wrapper .design-archives nav ul li:nth-child(2){
+	margin-top: 4vh;
+}
+
+aside.sidebar .wrapper .design-archives nav ul li a{
+	text-decoration: none;
+	color: var(--pas-blanc);
+}
+
+aside.sidebar .wrapper .zen-resources ul{
+	padding: 0 0 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+aside.sidebar .wrapper .zen-resources ul li{
+	padding: 0 0 0 0;
+	list-style: none;
+	color: var(--vert-2);
+	width: 10vw;
+	font-family: "Inder", sans-serif;
+	font-size: 1em;
+	text-align: center;
+	padding: 1vh 0 1vh 0 ;
+	-webkit-transition: all .4s ease;
+}
+
+aside.sidebar .wrapper .zen-resources ul li a{
+	text-decoration: none;
+	color: var(--vert-2);
+}
+
+/* Intro */
+
+section.intro{
+	order: 1;
+}
+
+section.intro header{
+	background-color: var(--jaune);
+	height: 100vh;
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: end;
+	background-image: url("Madame_1.svg"), url("Floral_pattern.svg");
+	background-position: 5vw 3vh, 0 0;
+	background-repeat: no-repeat, repeat;
+	background-size: 45%, 100%;
+}
+
+h1{
+	font-family: "artNouveauCaps", sans-serif;
+	font-size: 6em;
+	font-weight: 100;
+	width: 300px;
+	overflow-wrap: break-word;
+	text-align: right;
+	margin: 0 2vw 0 0;
+	color: var(--vert-2);
+}
+
+h2{
+	font-family: "floralCaps", sans-serif;
+	font-size: 3.5em;
+	color: var(--bordeaux);
+	font-weight: 550;
+	text-transform: lowercase;
+	width: 240px;
+	text-wrap:wrap;
+	text-align: right;
+	margin: 0 2vw 0 0;
+}
+
+h2::first-letter{
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+
+
+p{
+	font-family: "Inder", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+#zen-supporting{
+	order: 2;
+}
