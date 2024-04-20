@@ -251,4 +251,27 @@ h2::first-letter{
 
 #zen-supporting{
 	order: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#zen-supporting *{
+	width: 100vw;
+}
+
+#zen-supporting h3{
+	font-family: "floralCaps", sans-serif;
+	font-size: 4em;
+	font-weight: 100;
+	color: var(--bordeaux);
+}
+
+#zen-supporting .explanation{
+	max-height: 100vh;
+}
+
+#zen-supporting .explanation h3{
+	transform: rotate(-90deg);
+	height: 10vw;
 }
