@@ -51,6 +51,12 @@ body{
 	flex-direction: row;
 }
 
+p{
+	font-family: "Inder", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
 /* Sidebar */
 
 aside.sidebar{
@@ -241,14 +247,6 @@ h2{
 h2::first-letter{
 	font-size: 2em;
 	text-transform: uppercase;
-}
-
-
-
-p{
-	font-family: "Inder", sans-serif;
-	font-weight: 400;
-	font-style: normal;
 }
 
 #zen-supporting{
