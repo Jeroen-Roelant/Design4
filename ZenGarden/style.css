@@ -268,10 +268,42 @@ h2::first-letter{
 }
 
 #zen-supporting .explanation{
+	order: 1;
+	width: 80vw;
 	max-height: 100vh;
 }
 
 #zen-supporting .explanation h3{
-	transform: rotate(-90deg);
-	height: 10vw;
+	text-align: center;
+	
+}
+
+#zen-supporting .explanation:nth-child(2){
+
+}
+
+
+#zen-supporting::after{
+	order: 2;
+	display: block;
+	content: "Bonjour";
+	height: 100vh;
+	min-width: 40vw;
+	background-color: var(--jaune);
+}
+
+#zen-supporting .participation{
+	order: 3;
+}
+
+#zen-supporting .benefits{
+	order: 3;
+}
+
+#zen-supporting .requirements{
+	order: 3;
+}
+
+#zen-supporting footer{
+	order: 4;
 }
