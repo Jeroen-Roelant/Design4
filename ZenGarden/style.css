@@ -41,10 +41,13 @@
 body{
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .page-wrapper {
 	background-color: var(--pas-blanc);
+	overflow: hidden;
 	overflow-x: scroll;
 	overflow-y: none;
 	display: flex;
@@ -64,16 +67,17 @@ aside.sidebar{
 	min-width: 20vw;
 	height: 100vh;
 	overflow-y: scroll;
+	scrollbar-color: var(--jaune) var(--pas-blanc);
 
 	scroll-snap-align: start;
 
 	opacity: 0.5;
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 aside.sidebar:hover{
 	opacity: 1;
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 aside.sidebar .wrapper {
@@ -110,12 +114,12 @@ aside.sidebar .wrapper .design-selection nav ul li{
 	flex-wrap: wrap;
 	font-family: "Inder", sans-serif;
 	
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 aside.sidebar .wrapper * li:hover{
 	scale: 1.2;
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 aside.sidebar .wrapper .design-selection nav ul li a:nth-child(1){
@@ -127,7 +131,7 @@ aside.sidebar .wrapper .design-selection nav ul li a:nth-child(1){
 	width: 100%;
 	margin-bottom: -50px;
 	
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 aside.sidebar .wrapper .design-selection nav ul li a:nth-child(2){
@@ -137,13 +141,13 @@ aside.sidebar .wrapper .design-selection nav ul li a:nth-child(2){
 	text-decoration: none;
 	text-align: center;
 
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 aside.sidebar .wrapper .design-selection nav ul li a:hover{
 	color: var(--vert-2);
 
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 aside.sidebar .wrapper .design-archives nav ul{
@@ -165,7 +169,7 @@ aside.sidebar .wrapper .design-archives nav ul li{
 	text-align: center;
 	color: var(--pas-blanc);
 	padding: 2vh 0 2vh 0 ;
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 aside.sidebar .wrapper .design-archives nav ul li:nth-child(2){
@@ -195,7 +199,7 @@ aside.sidebar .wrapper .zen-resources ul li{
 	font-size: 1em;
 	text-align: center;
 	padding: 1vh 0 1vh 0 ;
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 aside.sidebar .wrapper .zen-resources ul li a{
@@ -223,6 +227,14 @@ section.intro header{
 	background-size: 45%, 100%;
 }
 
+section.intro header::after{
+	content: "horizontal scroll >>" ;
+	font-family: "trinigan", sans-serif;
+	font-size: 1.5em;
+	margin: 0 2vw 0 0;
+	color: var(--vert-2);
+}
+
 h1{
 	font-family: "artNouveauCaps", sans-serif;
 	font-size: 6em;
@@ -246,10 +258,66 @@ h2{
 	margin: 0 2vw 0 0;
 }
 
+h2 abbr{
+	font-family: "artNouveauCaps", sans-serif;
+	font-size: 0.7em;
+}
+
 h2::first-letter{
 	font-size: 2em;
 	text-transform: uppercase;
 }
+
+section.intro .summary{
+	display: none;
+	color: var(--vert-2);
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 50vw;
+	top: 10vh;
+}
+
+/* .extra1{
+	z-index: 0;
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50vw;
+	top: 10vh;
+}
+
+body .extra1:hover ~ .page-wrapper .intro .summary{
+	display: block;
+} */
+
+section.intro .preamble{
+	display: none;
+	color: var(--vert-2);
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 50vw;
+	top: 10vh;
+}
+/* 
+.extra2{
+	z-index: 0;
+	background-color: greenyellow;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50vw;
+	top: 20vh;
+}
+
+body .extra2:hover ~ .page-wrapper .intro .preamble{
+	display: block;
+} */
+
+
+/* Zen supporting */
 
 #zen-supporting{
 	scroll-snap-align: start;
