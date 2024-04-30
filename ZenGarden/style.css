@@ -61,7 +61,6 @@ p{
 }
 
 /* Sidebar */
-
 aside.sidebar{
 	order: 0;
 	min-width: 20vw;
@@ -187,7 +186,6 @@ aside.sidebar .wrapper .zen-resources ul{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 }
 
 aside.sidebar .wrapper .zen-resources ul li{
@@ -208,7 +206,6 @@ aside.sidebar .wrapper .zen-resources ul li a{
 }
 
 /* Intro */
-
 section.intro{
 	order: 1;
 }
@@ -301,8 +298,8 @@ section.intro .preamble{
 	left: 50vw;
 	top: 10vh;
 }
-/* 
-.extra2{
+
+/* .extra2{
 	z-index: 0;
 	background-color: greenyellow;
 	width: 100px;
@@ -316,9 +313,7 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	display: block;
 } */
 
-
 /* Zen supporting */
-
 #zen-supporting{
 	scroll-snap-align: start;
 	scroll-snap-type: y mandatory;
@@ -369,8 +364,9 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	margin-bottom: 10vh;
 }
 
-
 #zen-supporting::after{
+	scroll-snap-align: start;
+
 	order: 2;
 	display: block;
 	content: "Bonjour";
@@ -380,8 +376,6 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	min-width: 30vw;
 	background-color: var(--jaune);
 	background-size: 100vh ;
-
-	scroll-snap-align: start;
 }
 
 #zen-supporting .participation{
@@ -409,20 +403,19 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 }
 
 #zen-supporting .benefits{
-	order: 3;
-
 	scroll-snap-align: start;
-
+	
+	order: 3;
 }
 
 #zen-supporting .requirements{
-	order: 3;
-
 	scroll-snap-align: start;
+	
+	order: 3;
 }
 
 #zen-supporting footer{
-	order: 4;
-
 	scroll-snap-align: start;
+	
+	order: 4;
 }
