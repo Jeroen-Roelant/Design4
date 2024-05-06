@@ -403,9 +403,44 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 }
 
 #zen-supporting .benefits{
-	scroll-snap-align: start;
-	
+	scroll-snap-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-image: url("Window.svg");
+	color: rgba(0, 0, 0, 0);
+	height: 50vw;
+	width: 50vw;
+	background-size: 75vh ;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 25vw 0 25vw;
 	order: 3;
+	background-blend-mode: overlay;
+
+	transition: all .4s ease;
+}
+
+#zen-supporting .benefits:hover{
+	opacity: 1;
+	color: var(--vert-2);
+	background-color: var(--pas-blanc);
+	transition: all .4s ease;
+}
+
+#zen-supporting .benefits h3{
+	z-index: 0;
+	width: 30vw;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+#zen-supporting .benefits p{
+	z-index: 0;
+	width: 30vw;
+	margin: 0 auto 0 auto;
 }
 
 #zen-supporting .requirements{
@@ -414,8 +449,42 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	order: 3;
 }
 
+/* Footer */
+
 #zen-supporting footer{
 	scroll-snap-align: start;
 	
+	width: 20vw;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 	order: 4;
+}
+
+#zen-supporting footer *{
+	list-style-type: none;
+	height: 150px;
+	width: 10vw;
+	background-image: url("Frame_1.svg");
+	background-repeat: no-repeat;
+	background-size: fill;
+	background-position: center;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	font-family: "Trinigan", sans-serif;
+	font-size: 2em;
+	color: var(--vert-2);
+	text-decoration: none;
+
+	transition: all .4s ease;
+}
+
+#zen-supporting footer *:hover{
+	scale: 1.2;
+	transition: all .4s ease;
 }
