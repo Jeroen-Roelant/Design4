@@ -21,13 +21,13 @@ fetch(filePath)
 function createMiniCard(id, imageSrc, cardDescription, cardTitle) {
     let miniCard = `
         <div class="mini_card" id="${id}">
-                <div class="image">
-                        <img src="${imageSrc}" alt="placeholder">
-                </div>
-                <div class="info">
-                        <p class="data playfair-display">${cardDescription}</p>
-                        <h2 class="playfair-display">${cardTitle}</h2>
-                </div>
+            <div class="image">
+                <img src="${imageSrc}" alt="placeholder">
+            </div>
+            <div class="info">
+                <p class="data ubuntu-medium-italic">${cardDescription}</p>
+                <h2 class="ubuntu-bold">${cardTitle}</h2>
+            </div>
         </div>
     `;
     
@@ -43,5 +43,7 @@ function changeMainContent(id) {
     });
     document.querySelector('main .title').innerHTML = this.data[id].Title;
     document.querySelector('main .description').innerHTML = this.data[id].Description;
-    document.querySelector('main .content').innerHTML = this.data[id].Content;   
+    document.querySelector('main .content').innerHTML = this.data[id].Content;
 }
+
+

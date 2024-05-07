@@ -62,6 +62,17 @@ main {
     overflow-y: scroll;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chatlog::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge add Firefox */
+.chatlog {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
+
 .message{
     background-color: white;
     max-width: 190px;
