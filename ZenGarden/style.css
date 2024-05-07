@@ -435,6 +435,12 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	width: 30vw;
 	margin: 0 auto 0 auto;
 	text-align: center;
+	color: rgba(0, 0, 0, 0);
+}
+
+#zen-supporting .benefits:hover h3{
+	color: var(--Bordeaux);
+	transition: all .4s ease;
 }
 
 #zen-supporting .benefits p{
@@ -446,7 +452,22 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 #zen-supporting .requirements{
 	scroll-snap-align: start;
 	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
 	order: 3;
+}
+
+#zen-supporting .requirements h3{
+	text-align: center;
+	width: 100vw;
+}
+
+#zen-supporting .requirements p{
+	text-align: justify;
+	width: 15vw;
 }
 
 /* Footer */
