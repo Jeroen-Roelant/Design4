@@ -1,13 +1,22 @@
-const data = {
-    cards: [
-        {
-            imageSrc: ["https://upload.wikimedia.org/wikipedia/commons/e/e5/Saab_900_GLE_%282%29_%28crop%29.jpg"],
-            Description: "Card Description 1",
-            Title: "Card Title 1",
-            Content: "hi"
-        }
-    ]
-};
+const filePath = './siteContent.json';
+
+let data = [];
+
+fetch(filePath)
+    .then(Response => Response.json())
+    .then(data => {
+        data.forEach((e, index) => {
+            createMiniCard(index ,e.imageSrc[0], e.Description, e.Title);
+        });
+
+        document.querySelectorAll('.mini_card').forEach(card => {
+            card.addEventListener('click', () => {
+                changeMainContent(card.id);
+            });
+        });
+
+        this.data = data;
+});
 
 function createMiniCard(id, imageSrc, cardDescription, cardTitle) {
     let miniCard = `
@@ -26,6 +35,13 @@ function createMiniCard(id, imageSrc, cardDescription, cardTitle) {
     aside.innerHTML += miniCard;
 };
 
-data.cards.forEach((card, index) => {
-    createMiniCard(index ,card.imageSrc[0], card.Description, card.Title);
-});
+function changeMainContent(id) {
+    console.log(id);
+    document.querySelector('.imageCarousel').innerHTML = '';
+    this.data[id].imageSrc.forEach((src, index) => {
+        document.querySelector('.imageCarousel').innerHTML+=`<img src="${src}" alt="placeholder">`;
+    });
+    document.querySelector('main .title').innerHTML = this.data[id].Title;
+    document.querySelector('main .description').innerHTML = this.data[id].Description;
+    document.querySelector('main .content').innerHTML = this.data[id].Content;   
+}
