@@ -1,12 +1,24 @@
 [
     {
+        "imageSrc": ["./images/ZenGarden/ZenGarden1.jpg", "./images/ZenGarden/Moodboard.jpg", "./images/ZenGarden/ZenGarden_proto_1.jpg", "./images/ZenGarden/ZenGarden_proto_2.jpg"],
+        "Description": "Design 3",
+        "Title": "CSS Zen Garden",
+        "Content": "<p>Voor het vak Design 3 kregen we de opdracht zelf de CSS Zen garden opdracht eens aan te pakken. Dit moesten we doen in thema van een architectuurstijl die ons willekeurig werd toegewezen. Ik kreeg als thema Art Nouveau.</p> <p>In het verleden had ik dit al eens gedaan (in het middelbaar), maar deze versie was ook niet super in haar resultaat. Daarom ben ik helemaal opnieuw begonnen om iets te maken dat past bij de stijl, en zeer esthetisch is.</p> <h2>Research & Moodboard</h2><p>Als eerst werd er grondig geresearched naar de historie van de stijl en de belangrijkste en bekendste artiesten, architecten en kunstwerken ervan. Belangrijke dingen die werden genoteerd, waren: Kleuren, stijlkenmerken, typografie, patronen, texturen, architecten, kunst(enaars), ...</p><p>Op basis van deze informatie werd er vervolgens een moodboard opgesteld. Dit is de tweede afbeelding in deze collectie. Dit is de basis waarop ik m'n design ging baseren.</p><h2>Prototype</h2><p>Het eerste wat ik besliste om mee verder op te bouwen, was om de site horizontaal te laten scrollen, in de plaats van verticaal, met een scroll snap. Waarom? dat weet ik niet maar het leek me een leuke manier om mijn ontwerp te laten differentiëren. Met dit idee ben ik dus vertrokken om een low-fidelity prototype te maken dat met elk onderwerp van de Zen Garden content een ander creatief ontwerp of idee probeerde te bereiken (zie <a href='./images/ZenGarden/ZenGarden_proto_1.jpg'>afbeelding 3</a>).</p><p>Dit werd later verfijnd tot een high-fidelity prototype, waarin er een keuze werd gemaakt naar kleuren, typografie, afbeeldingen, ... (zie <a href='./images/ZenGarden/ZenGarden_proto_2.jpg'>afbeelding 4</a>).</p><h2>Code</h2><p>Na het prototype werd de css uitgeschreven. Bekijk hier <a href='https://jeroen-roelant.github.io/Design4/ZenGarden/index.html'>het resultaat</a> en <a href='https://github.com/Jeroen-Roelant/Design4/blob/main/ZenGarden/style.css'>de broncode</a></p>"
+    },
+    {
+        "imageSrc": ["./images/Poster/Poster1.jpg"],
+        "Description": "Design 4",
+        "Title": "Dynamic Movie Poster",
+        "Content": "<p>hi</p>"
+    },
+    {
         "imageSrc": ["./images/UselessWeb/image_calc1.png", "./images/UselessWeb/image_LoR1.png"],
         "Description": "Design 4",
         "Title": "Useless Websites",
         "Content": "<p>hi</p>"
     },
     {
-        "imageSrc": ["./images/Hoppin/Hoppin1.jpg", "./images/UselessWeb/image_LoR1.png"],
+        "imageSrc": ["./images/Hoppin/Hoppin1.jpg"],
         "Description": "Design 3",
         "Title": "Hoppin",
         "Content": "<p>hi</p>"

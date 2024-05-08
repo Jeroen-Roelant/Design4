@@ -32,18 +32,35 @@ function createMiniCard(id, imageSrc, cardDescription, cardTitle) {
     `;
     
     let aside = document.querySelector('aside.browse');
-    aside.innerHTML += miniCard;
+    aside.insertAdjacentHTML('beforeend', miniCard);
 };
 
 function changeMainContent(id) {
     console.log(id);
     document.querySelector('.imageCarousel').innerHTML = '';
     this.data[id].imageSrc.forEach((src, index) => {
-        document.querySelector('.imageCarousel').innerHTML+=`<img src="${src}" alt="placeholder">`;
+        document.querySelector('.imageCarousel').insertAdjacentHTML('beforeend',`<img src="${src}" alt="placeholder">`);
     });
-    document.querySelector('main .title').innerHTML = this.data[id].Title;
-    document.querySelector('main .description').innerHTML = this.data[id].Description;
-    document.querySelector('main .content').innerHTML = this.data[id].Content;
+
+    document.querySelectorAll('.imageCarousel img').forEach(img => {
+        img.addEventListener('click', (event) => {
+            showImage(event.target.src);
+        });
+    });
+
+    document.querySelector('main .mainBox .title').innerHTML = this.data[id].Title;
+    document.querySelector('main .mainBox .description').innerHTML = this.data[id].Description;
+    document.querySelector('main .mainBox .content').innerHTML = this.data[id].Content;
 }
 
+function showImage(src){
+    document.querySelector('body').insertAdjacentHTML('beforeend', `
+    <div class="blurred">
+        <img class="big-image" src="${src}" alt="placeholder">
+    </div>`);
+
+    document.querySelector('.big-image').addEventListener('click', () => {
+        document.querySelector('.blurred').remove();
+    });
+}
 
