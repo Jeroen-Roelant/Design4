@@ -16,6 +16,7 @@ fetch(filePath)
         });
 
         this.data = data;
+        changeMainContent(0);
 });
 
 function createMiniCard(id, imageSrc, cardDescription, cardTitle) {
@@ -59,7 +60,7 @@ function showImage(src){
         <img class="big-image" src="${src}" alt="placeholder">
     </div>`);
 
-    document.querySelector('.big-image').addEventListener('click', () => {
+    document.querySelector('.blurred').addEventListener('click', () => {
         document.querySelector('.blurred').remove();
     });
 }

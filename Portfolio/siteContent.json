@@ -1,5 +1,11 @@
 [
     {
+        "imageSrc": ["./images/About/1.jpg"],
+        "Description": "About me",
+        "Title": "Jeroen Roelant",
+        "Content": "<p><a href='https://github.com/Jeroen-Roelant'>GitHub</a> <a href='https://www.linkedin.com/in/jeroen-roelant/'>LinkedIn</a> <a href='mailto:jeroenroelant@hotmail.com'>Mail</a></p> <p>Al sinds jongs af aan was ik gefascineerd door technologie en het ontwerp er van. Dat zie je ook aan het academisch pad dat ik heb afgelegd. Na enkele jaren door te brengen in Humane wetenschappen, had ik door dat dat helemaal niet voor mij was. Toen ben ik overgeschakeld naar Multimedia op TSM. Dit is een richting die me veel beter lag.</p><p>In 2020 ben ik begonnen aan mijn opleiding Elektronica-ICT, aan de AP Hogeschool te Antwerpen, een opleiding dat me enorm veel heeft bijgeleerd. Hier heb ik een zeer technische mindset verworven, en geleerd om dat om te zetten naar echte digitale producten. Buiten dat heb ik ook enorm veel geleerd van analyse</p>"
+    },
+    {
         "imageSrc": ["./images/ZenGarden/ZenGarden1.jpg", "./images/ZenGarden/Moodboard.jpg", "./images/ZenGarden/ZenGarden_proto_1.jpg", "./images/ZenGarden/ZenGarden_proto_2.jpg"],
         "Description": "Design 3",
         "Title": "CSS Zen Garden",
@@ -27,6 +33,6 @@
         "imageSrc": ["https://images.squarespace-cdn.com/content/v1/54eb8d6ae4b0c9a277f21d4a/e566ceb1-1be2-46e2-9ad3-89617f43b013/95+360+Landscape.jpg","https://images.squarespace-cdn.com/content/v1/54eb8d6ae4b0c9a277f21d4a/e566ceb1-1be2-46e2-9ad3-89617f43b013/95+360+Landscape.jpg"],
         "Description": "Card Description 1",
         "Title": "saab 9-5",
-        "Content": "<p>hi</p>"
+        "Content": "<p>coole auto</p>"
     }
 ]
