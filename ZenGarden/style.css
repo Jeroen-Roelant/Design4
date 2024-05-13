@@ -514,30 +514,14 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	body {
 		overflow-x: auto;
 		overflow-y: auto;
-		width: 200vw;
+		width: 100vw;
 	}
 	
 	.page-wrapper {
-		max-width: 200vw;
+		max-width: 100vw;
 		flex-wrap: wrap;
 		flex-direction: row;
-		scroll-snap-type: none;
-	}
-	
-	aside.sidebar {
-		min-width: 100vw;
-		opacity: 1;
-		order: 3;
-	}
-	
-	aside.sidebar .wrapper .design-selection nav ul li {
-		width: 100%;
-		height: auto;
-		margin-bottom: 10px;
-	}
-	
-	aside.sidebar .wrapper .design-selection nav ul li a:nth-child(1) {
-		margin-bottom: 0;
+		scroll-snap-type: y mandatory;
 	}
 	
 	section.intro header {
@@ -549,7 +533,8 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	}
 
 	section.intro header::after {
-		content: "Other projects >>";
+		/* content: "Other projects >>"; */
+		display: none	;
 	}
 
 	section.intro header h2 {
@@ -559,6 +544,7 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	}
 	
 	h1 {
+		margin: 2vh 0 0 0;
 		font-size: 5em;
 		width: 60vw;
 		text-align: center;
@@ -572,7 +558,7 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	}
 
 	h3{
-		font-size: 2em;
+		font-size: 3em;
 		margin: none;
 	}
 	
@@ -582,37 +568,73 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	}
 	
 	#zen-supporting {
+		order: 2;
 		flex-direction: column;
 		width: 100vw;
+		min-height: 100vh;
 	}
 
-	#zen-supporting *{
+	#zen-supporting * p{
+		max-width: 95vw;
+		text-align: left;
+	}
+
+	#zen-supporting .explanation {
 		min-width: 100vw;
+
+		scroll-snap-align: start;
 	}
 	
 	#zen-supporting .explanation h3 {
-		margin-bottom: 10vh;
+		font-size: 2.5em;
+		margin: 2vh 0 2vh 0;
 		padding-top: 0;
 		min-width: 100vw;
 	}
 	
+	#zen-supporting .explanation p {
+		width: 96vw;
+	}
+	
 	#zen-supporting::after {
-		display: none;
+		margin: 1vh 0 1vh 0;
+		height: 40vh;
 	}
 	
 	#zen-supporting .participation {
 		flex-direction: column;
 		align-items: center;
+		width: 100vw;
+		height: 80vh;
 	}
-	
-	#zen-supporting .participation h3,
-	#zen-supporting .participation p {
-		width: 100%;
-		text-align: center;
+
+	#zen-supporting .participation h3{
+		width: 100vw;	
+		writing-mode: horizontal-tb;
+		font-size: 2.5em;
+		margin: 1vh 0 1vh 0;
+		height: auto;
+	}
+
+	#zen-supporting .participation p{
+		width: 100vw;
+		margin: 0 0 0 0;
 	}
 	
 	#zen-supporting .benefits {
 		margin: 0;
+		height: 72vh;
+		width: 100vw;
+		background-size: 80vw;
+	}
+
+	#zen-supporting .benefits h3 {
+		font-size: 2.5em;
+		width: 100vw;
+	}
+
+	#zen-supporting .benefits p {
+		width: 100vw;
 	}
 	
 	#zen-supporting .benefits h3 {
@@ -623,6 +645,11 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	#zen-supporting .requirements {
 		justify-content: center;
 	}
+
+	#zen-supporting .requirements h3 {
+		font-size: 2.5em;
+		width: 100vw;
+	}
 	
 	#zen-supporting .requirements p {
 		width: 100%;
@@ -630,5 +657,43 @@ body .extra2:hover ~ .page-wrapper .intro .preamble{
 	
 	#zen-supporting footer {
 		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	#zen-supporting footer * {
+		width: 40%;
+	}
+
+	aside.sidebar {
+		overflow: hidden;
+		height: fit-content;
+		min-width: 100vw;
+		opacity: 1;
+		order: 3;
+	}
+	
+	aside.sidebar .wrapper .design-selection nav ul li {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+		background-image: url("Frame_2.svg");
+	}
+	
+	aside.sidebar .wrapper .design-selection nav ul li a:nth-child(1) {
+		margin-bottom: 0;
+	}
+
+	aside.sidebar .wrapper .design-archives nav ul li {
+		width: 75vw;
+		margin-bottom: 10px;
+		font-weight: 100;
+	}
+
+	aside.sidebar .wrapper .zen-resources ul li {
+		width: 75vw;
+		margin-bottom: 1vh;
+		font-weight: 100;
 	}
 }
