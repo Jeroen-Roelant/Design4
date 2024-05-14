@@ -218,8 +218,6 @@ main .mainBox .content p{
 }
 
 @media (max-width: 768px) {
-    
-
     body {
         flex-direction: column;
         overflow-y: auto;
@@ -279,6 +277,7 @@ main .mainBox .content p{
     }
 
     .blurred{
+        height: 100%;
         position: fixed;
         top: 50%;
         left: 50%;
