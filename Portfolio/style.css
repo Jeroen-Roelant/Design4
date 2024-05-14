@@ -9,6 +9,27 @@
     --background: #eeeeee;
 }
 
+/* ::-webkit-scrollbar {
+width: 0.2vw;
+}
+::-webkit-scrollbar:hover {
+width: 0.4vw;
+}
+
+::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+background: rgba(0, 0, 0, 0.2);
+border-radius: 1vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+width: 0.4vw;
+} */
+
 .playfair-display {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -150,7 +171,13 @@ aside .mini_card{
 }
 
 .mini_card h2, .mini_card p{
-    margin: 0 0 0 1vh;
+    margin: 0 0 0 0.5vw;
+    line-height: normal;
+}
+
+.mini_card h2{
+    font-size: 1.5em;
+    padding: 0 0 1vh 0;
 }
 
 /* Main */
