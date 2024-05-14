@@ -277,4 +277,10 @@ main .mainBox .content p{
         max-height: 60vh;
         max-width: 90vw;
     }
+
+    .blurred{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    }
 }
