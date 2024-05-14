@@ -64,6 +64,28 @@
     font-style: italic;
 }
 
+h1{
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+h2{
+    margin: 3vh 0 1vh 0;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+}
+
+h3{
+    font-size: 1vw;
+    line-height: 2vw;
+}
+
+p, li{
+    font-size: 1vw;
+    line-height: 1.5vw;
+    list-style: none;
+}
+
 body{
     display: flex;
     flex-direction: row;
@@ -127,10 +149,6 @@ aside .mini_card{
     margin-top: 1vh;
 }
 
-.mini_card h2{
-    padding-bottom: 1vh;
-}
-
 .mini_card h2, .mini_card p{
     margin: 0 0 0 1vh;
 }
@@ -146,7 +164,7 @@ main{
 }
 
 main .mainBox {
-    width: 75%;
+    width: 50%;
     padding: 1vh 0 2vh 0;
     border-radius: 2vh;
     box-shadow: 0 0 20px var(--shadow);
@@ -185,12 +203,8 @@ main .mainBox .title, main .mainBox .content, main .mainBox .description{
     padding: 0 16px 0 16px;
 }
 
-main .mainBox .content h2{
-    margin: 8px 0 8px 0;
-}
-
 main .mainBox .content p{
-    margin: 8px 0 8px 0;
+    margin: 1vh 0 1vh 0;
 }
 
 /* Big image */
@@ -218,6 +232,26 @@ main .mainBox .content p{
 }
 
 @media (max-width: 768px) {
+    h1{
+        font-size: 4vh;
+        line-height: 6vh;
+    }
+    
+    h2{
+        font-size: 3vh;
+        line-height: 5vh;
+    }
+    
+    h3{
+        font-size: 2vh;
+        line-height: 4vh;
+    }
+    
+    p, li{
+        font-size: 2vh;
+        line-height: 3vh;
+    }
+
     body {
         flex-direction: column;
         overflow-y: auto;
@@ -238,7 +272,7 @@ main .mainBox .content p{
     aside .mini_card {
         min-width: 75%;
         margin: 0 2vw 0 2vw;
-        height: 25vh;
+        height: 26vh;
     }
 
     aside .mini_card:hover {
@@ -251,6 +285,10 @@ main .mainBox .content p{
 
     aside .mini_card .info .data {
         font-size: 1em;
+    }
+
+    aside .mini_card h2 {
+        line-height: 2.5vh;
     }
     
     main {
