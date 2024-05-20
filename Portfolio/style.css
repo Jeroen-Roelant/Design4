@@ -9,6 +9,13 @@
     --background: #eeeeee;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
 /* ::-webkit-scrollbar {
 width: 0.2vw;
 }
@@ -114,6 +121,12 @@ body{
     background-color: var(--background);
 }
 
+.noMargin{
+    margin: 0 !important;
+}
+
+/* Aside */
+
 aside{
     width: 23vw;
     display: flex;
@@ -196,7 +209,7 @@ main .mainBox {
     border-radius: 2vh;
     box-shadow: 0 0 20px var(--shadow);
     background-color: #ffffff;
-    margin: 16px 0 0 0;
+    margin: 1em 0 1em 0;
 }
 
 main .mainBox .imageCarousel{
@@ -256,6 +269,29 @@ main .mainBox .content p{
     z-index: 9999; 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+}
+
+/* HOtizontal list */
+
+.horizontalList{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2vw;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1vh 0 2vh 0;
+}
+
+.experience h3, .experience p{
+    margin: 0 0 0 0;
 }
 
 @media (max-width: 768px) {

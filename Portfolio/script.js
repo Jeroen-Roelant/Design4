@@ -52,6 +52,8 @@ function changeMainContent(id) {
     document.querySelector('main .mainBox .title').innerHTML = this.data[id].Title;
     document.querySelector('main .mainBox .description').innerHTML = this.data[id].Description;
     document.querySelector('main .mainBox .content').innerHTML = this.data[id].Content;
+
+    document.querySelector('main').scrollTop = 0;
 }
 
 function showImage(src){
