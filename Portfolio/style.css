@@ -9,12 +9,12 @@
     --background: #eeeeee;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
         color: white;
     }
-}
+} */
 
 /* ::-webkit-scrollbar {
 width: 0.2vw;
