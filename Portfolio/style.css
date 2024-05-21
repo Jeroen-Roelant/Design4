@@ -251,6 +251,22 @@ main .mainBox .content p{
     margin: 1vh 0 1vh 0;
 }
 
+main .mainBox .content .techStack {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    margin: 1em 0 0 0;
+}
+
+main .mainBox .content .techStack img{
+    height: 4em;
+    width: 4em;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
 /* Big image */
 
 .big-image{
